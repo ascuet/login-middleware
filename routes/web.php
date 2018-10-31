@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('login','HomeController@login');
+
+Route::post('loginStore', 'HomeController@loginStore');
