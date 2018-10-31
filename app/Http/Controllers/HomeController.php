@@ -22,7 +22,7 @@ class HomeController extends Controller
     		Session::put('userid',$user->id);
             Session::put('useremail',$user->email);
 
-    		echo 'User found';
+    		return redirect('/dashboard');
     	}
     	else {
     		echo 'User Not found';
@@ -37,5 +37,9 @@ class HomeController extends Controller
     	else{
     		echo 'Session not found';
     	}
+    }
+
+    public function dashboard(){
+    	return view('dashboard');
     }
 }
