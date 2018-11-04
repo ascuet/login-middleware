@@ -50,6 +50,6 @@ class HomeController extends Controller
                     ->select('districts.id','divisions.name as division','districts.name as district')
                     ->get();
 
-        return view('join');
+        return view('join',['shouvik'=>$data]);
     }
 }

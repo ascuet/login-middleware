@@ -14,11 +14,14 @@
 				<th>DIVISION</th>
 			</thead>
 			<tbody>
+				@foreach($shouvik as $s)
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>{{ $s->id }}</td>
+					<td>{{ $s->district }}</td>
+					<td>{{ $s->division }}</td>
 				</tr>
+				@endforeach
+				
 			</tbody>
 		</table>
 	</div>
